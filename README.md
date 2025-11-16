@@ -30,12 +30,12 @@ Design and implementation of a secure Small Office/Home Office network for Green
 
 # Project Documentation
 
-## Question 1.1 - Network Topology Design
+##  1.1 - Network Topology Design
 ![Network Topology](./gi1ektsb.png)
 
 The network topology features segmented VLANs with StaffNet (192.168.10.0/24) and GuestNet (192.168.20.0/24) networks, providing logical separation between staff and guest devices while maintaining internet access for both.
 
-## Question 1.2 - Hardware Budget
+## 1.2 - Hardware Budget
 [**SOHO-Budget Spreadsheet**](https://docs.google.com/spreadsheets/d/1VNyceKz-guLX6_HI2n63NnFJNAz2gdh041wBPAmJOiY/edit?usp=sharing)
 
 ### UniFi Dream Router - R5,495.85
@@ -100,17 +100,17 @@ The network topology features segmented VLANs with StaffNet (192.168.10.0/24) an
 
 **Total Budget: R33,544.85**
 
-## Question 1.3 - Virtualization Benefits
+## 1.3 - Virtualization Benefits
 
 **Snapshots** are taken before any configuration changes like security policies, firewall rules and router configurations, these are taken to roll back in case any error occurs. **Cloning** ensures **StaffPC** and **GuestPC** are cloned from a base VM, therefore saving time and ensuring the setups remain consistent. The whole SOHO runs on an isolated environment, so experiments like firewall misconfigs and malware testing don't affect the host system, **Sandboxing** helps with this. **Testing and flexibility** of VMs mean that you can simulate VLANs, windows firewall rules, file sharing and backups without buying the physical hardware. **Security Benefits** are that malicious traffic or mistakes stay isolated inside the VM environment, so the host OS is safe. To help **Disaster recovery** snapshots and clones are used as backups so that if configurations fail the network can be rebuilt quickly. **VirtualBox** is free and accessible while also being good enough for a SOHO **simulation**, its alternative **VMware workstation** is free for commercial education and personal use however from personal experience it is hard to access, but better for more advanced networking.
 
-## Question 1.4 - Client Pitch
+## 1.4 - Client Pitch
 
 Good day with the task I was assigned to by Greenleaf Architects, the focus remained consistent on keeping things secure, reliable and at the same time affordable. The network I designed puts the Staff and Guests into two separate networks, this means that visitors can access guest PC and connect to the internet via Wi-Fi, but they won't be able to see or touch your sensitive company files. On the staff side of the network, we have setup a backup server that automatically saves and protects your files on a schedule, this ensures that if a PC crashes or files get deleted you don't lose important files. I've included a color Laser printer to support daily operations which is ideal for printing designs and plans. The whole network is managed through a secure router with built in functions like a firewall and VLAN support so that you have enterprise grade protection at nearly half the cost. Best of all this solution stays well within the budget. Its cost effective and at the same time designed to grow with you in the event of you expanding the system can scale without you starting all over. In conclusion this setup provides peace of mind, keeps your data safe and supports the way you work in a simple way.
 
 ---
 
-## Question 2.1 - Virtual Machine Configuration
+## 2.1 - Virtual Machine Configuration
 
 ![Virtual Machines](./32nz4m52.png) ![VM Setup](./2xam2dip.png)
 
@@ -148,7 +148,7 @@ Good day with the task I was assigned to by Greenleaf Architects, the focus rema
 
 ---
 
-## Question 2.2 - Network Isolation & Firewall Configuration
+##  2.2 - Network Isolation & Firewall Configuration
 
 ![Firewall Rules](./bevml2lb.png) ![Guest Access Denied](./3fwg54al.png) ![Staff Access Allowed](./zdqpfhrl.png)
 
@@ -166,7 +166,7 @@ Good day with the task I was assigned to by Greenleaf Architects, the focus rema
 
 ---
 
-## Question 2.3 - Static IP Configuration & Testing
+##  2.3 - Static IP Configuration & Testing
 
 ![StaffPC1 Static IP](./p1bluoxi.png) ![GuestPC Static IP](./tnv2mqz4.png)
 
@@ -194,7 +194,7 @@ Good day with the task I was assigned to by Greenleaf Architects, the focus rema
 
 ---
 
-## Question 2.4 - File Sharing & Network Access
+## 2.4 - File Sharing & Network Access
 
 ![Network Sharing](./q5adwo5v.png) ![StaffPC1 Access](./j3j1dall.png)
 
@@ -232,7 +232,7 @@ Good day with the task I was assigned to by Greenleaf Architects, the focus rema
 
 ---
 
-## Question 2.6 - Network Access Verification
+## 2.6 - Network Access Verification
 
 ![StaffPC1 Network Access](./eo0ljtxl.png) ![StaffPC2 Network Access](./zywm0dpz.png)
 
@@ -244,15 +244,15 @@ Good day with the task I was assigned to by Greenleaf Architects, the focus rema
 
 ---
 
-## Question 3.1 - Final Network Diagram
+## 3.1 - Final Network Diagram
 
 ![Final Network Topology](./bfywlxxk.png)
 
-**Question 3.1:** Updated network topology showing complete SOHO implementation with all devices and network segmentation.
+** 3.1:** Updated network topology showing complete SOHO implementation with all devices and network segmentation.
 
 ---
 
-## Question 3.2 - Risk Assessment
+##  3.2 - Risk Assessment
 
 **When setting up this kind of small office network, a few risks stand out:**
 
@@ -267,7 +267,7 @@ Because everything is running as virtual machines, there's always a chance the h
 
 ---
 
-## Question 3.3 - System Limitations
+## 3.3 - System Limitations
 
 ### Virtual machine limitations
 VMs depend on the hosts computer hardware and resources. If any component like CPU/RAM is overloaded this directly affects performance. Not suitable for production scale loads.
